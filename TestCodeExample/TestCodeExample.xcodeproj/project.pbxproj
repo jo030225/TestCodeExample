@@ -15,10 +15,18 @@
 		BDDC19B628DA19B70068F476 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDC19B428DA19B70068F476 /* LaunchScreen.storyboard */; };
 		BDDC19C428DA1FBC0068F476 /* TestCodeExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDC19C328DA1FBC0068F476 /* TestCodeExampleTests.swift */; };
 		BDDC19CB28DB6ABC0068F476 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDC19CA28DB6ABC0068F476 /* ViewModel.swift */; };
+		BDDC19D328DCAD990068F476 /* TestCodeExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDC19D228DCAD990068F476 /* TestCodeExampleUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		BDDC19C528DA1FBC0068F476 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDDC199E28DA19B60068F476 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDDC19A528DA19B70068F476;
+			remoteInfo = TestCodeExample;
+		};
+		BDDC19D628DCAD990068F476 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BDDC199E28DA19B60068F476 /* Project object */;
 			proxyType = 1;
@@ -39,6 +47,8 @@
 		BDDC19C128DA1FBC0068F476 /* TestCodeExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCodeExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDC19C328DA1FBC0068F476 /* TestCodeExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCodeExampleTests.swift; sourceTree = "<group>"; };
 		BDDC19CA28DB6ABC0068F476 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		BDDC19D028DCAD990068F476 /* TestCodeExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCodeExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDDC19D228DCAD990068F476 /* TestCodeExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCodeExampleUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BDDC19CD28DCAD990068F476 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -64,6 +81,7 @@
 			children = (
 				BDDC19A828DA19B70068F476 /* TestCodeExample */,
 				BDDC19C228DA1FBC0068F476 /* TestCodeExampleTests */,
+				BDDC19D128DCAD990068F476 /* TestCodeExampleUITests */,
 				BDDC19A728DA19B70068F476 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +91,7 @@
 			children = (
 				BDDC19A628DA19B70068F476 /* TestCodeExample.app */,
 				BDDC19C128DA1FBC0068F476 /* TestCodeExampleTests.xctest */,
+				BDDC19D028DCAD990068F476 /* TestCodeExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +117,14 @@
 				BDDC19C328DA1FBC0068F476 /* TestCodeExampleTests.swift */,
 			);
 			path = TestCodeExampleTests;
+			sourceTree = "<group>";
+		};
+		BDDC19D128DCAD990068F476 /* TestCodeExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BDDC19D228DCAD990068F476 /* TestCodeExampleUITests.swift */,
+			);
+			path = TestCodeExampleUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +165,24 @@
 			productReference = BDDC19C128DA1FBC0068F476 /* TestCodeExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BDDC19CF28DCAD990068F476 /* TestCodeExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDDC19D828DCAD990068F476 /* Build configuration list for PBXNativeTarget "TestCodeExampleUITests" */;
+			buildPhases = (
+				BDDC19CC28DCAD990068F476 /* Sources */,
+				BDDC19CD28DCAD990068F476 /* Frameworks */,
+				BDDC19CE28DCAD990068F476 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDDC19D728DCAD990068F476 /* PBXTargetDependency */,
+			);
+			name = TestCodeExampleUITests;
+			productName = TestCodeExampleUITests;
+			productReference = BDDC19D028DCAD990068F476 /* TestCodeExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -152,6 +197,10 @@
 						CreatedOnToolsVersion = 14.0;
 					};
 					BDDC19C028DA1FBC0068F476 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = BDDC19A528DA19B70068F476;
+					};
+					BDDC19CF28DCAD990068F476 = {
 						CreatedOnToolsVersion = 14.0;
 						TestTargetID = BDDC19A528DA19B70068F476;
 					};
@@ -172,6 +221,7 @@
 			targets = (
 				BDDC19A528DA19B70068F476 /* TestCodeExample */,
 				BDDC19C028DA1FBC0068F476 /* TestCodeExampleTests */,
+				BDDC19CF28DCAD990068F476 /* TestCodeExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -188,6 +238,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BDDC19BF28DA1FBC0068F476 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDDC19CE28DCAD990068F476 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -216,6 +273,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BDDC19CC28DCAD990068F476 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDDC19D328DCAD990068F476 /* TestCodeExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -223,6 +288,11 @@
 			isa = PBXTargetDependency;
 			target = BDDC19A528DA19B70068F476 /* TestCodeExample */;
 			targetProxy = BDDC19C528DA1FBC0068F476 /* PBXContainerItemProxy */;
+		};
+		BDDC19D728DCAD990068F476 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDDC19A528DA19B70068F476 /* TestCodeExample */;
+			targetProxy = BDDC19D628DCAD990068F476 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -460,6 +530,40 @@
 			};
 			name = Release;
 		};
+		BDDC19D928DCAD990068F476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YT86278469;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.TestCodeExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestCodeExample;
+			};
+			name = Debug;
+		};
+		BDDC19DA28DCAD990068F476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YT86278469;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.TestCodeExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestCodeExample;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -486,6 +590,15 @@
 			buildConfigurations = (
 				BDDC19C828DA1FBC0068F476 /* Debug */,
 				BDDC19C928DA1FBC0068F476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDDC19D828DCAD990068F476 /* Build configuration list for PBXNativeTarget "TestCodeExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDDC19D928DCAD990068F476 /* Debug */,
+				BDDC19DA28DCAD990068F476 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
