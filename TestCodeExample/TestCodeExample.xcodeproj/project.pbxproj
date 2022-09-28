@@ -198,9 +198,11 @@
 					};
 					BDDC19C028DA1FBC0068F476 = {
 						CreatedOnToolsVersion = 14.0;
+						TestTargetID = BDDC19A528DA19B70068F476;
 					};
 					BDDC19CF28DCAD990068F476 = {
 						CreatedOnToolsVersion = 14.0;
+						TestTargetID = BDDC19A528DA19B70068F476;
 					};
 				};
 			};
@@ -453,7 +455,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestCodeExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestCodeExample";
+				TEST_HOST = "";
 			};
 			name = Debug;
 		};
@@ -482,13 +484,14 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestCodeExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestCodeExample";
+				TEST_HOST = "";
 			};
 			name = Release;
 		};
 		BDDC19C828DA1FBC0068F476 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YT86278469;
@@ -503,12 +506,14 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestCodeExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestCodeExample";
 			};
 			name = Debug;
 		};
 		BDDC19C928DA1FBC0068F476 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YT86278469;
@@ -523,6 +528,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestCodeExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestCodeExample";
 			};
 			name = Release;
 		};
@@ -541,7 +547,8 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestCodeExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestCodeExample";
+				TEST_HOST = "";
+				TEST_TARGET_NAME = TestCodeExample;
 				TREAT_MISSING_BASELINES_AS_TEST_FAILURES = NO;
 			};
 			name = Debug;
@@ -561,7 +568,8 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestCodeExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestCodeExample";
+				TEST_HOST = "";
+				TEST_TARGET_NAME = TestCodeExample;
 				TREAT_MISSING_BASELINES_AS_TEST_FAILURES = NO;
 			};
 			name = Release;
