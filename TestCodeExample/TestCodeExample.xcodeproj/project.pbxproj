@@ -455,6 +455,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestCodeExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestCodeExample";
 			};
 			name = Debug;
 		};
@@ -483,6 +484,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestCodeExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestCodeExample";
 			};
 			name = Release;
 		};
@@ -543,7 +545,9 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestCodeExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestCodeExample";
 				TEST_TARGET_NAME = TestCodeExample;
+				TREAT_MISSING_BASELINES_AS_TEST_FAILURES = NO;
 			};
 			name = Debug;
 		};
@@ -560,7 +564,9 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestCodeExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestCodeExample";
 				TEST_TARGET_NAME = TestCodeExample;
+				TREAT_MISSING_BASELINES_AS_TEST_FAILURES = NO;
 			};
 			name = Release;
 		};
